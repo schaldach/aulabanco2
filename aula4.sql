@@ -24,7 +24,7 @@ SELECT id_existe(0);
 -- o NEW e AFTER funcionam independente de ser BEFORE ou AFTER
 
 -- para cancelar um insert por exemplo, podemos usar RAISE EXCEPTION antes ou depois,
--- ou usar RETURN NULL (ao invés de NEW) apenas antes (depois não funcionaria)
+-- ou usar RETURN NULL apenas antes
 
 -- exemplo
 -- setup
