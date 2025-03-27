@@ -60,7 +60,7 @@ $$;
 CREATE TRIGGER last_name_changes
  BEFORE UPDATE
  ON employees
- FOR EACH ROW
+ FOR EACH ROW -- pelo que entendi, ao contrário do que parece, é para cada linha inserida, não para todas da tabela
  EXECUTE PROCEDURE log_last_name_changes();
  
 -- executando 
