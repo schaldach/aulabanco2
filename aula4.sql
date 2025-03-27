@@ -14,7 +14,7 @@ SELECT id_existe(0);
 -- Um evento pode ser qualquer um de: INSERT, UPDATE, DELETE, TRUNCATE (equivalente a um DELETE sem WHERE)
 -- Primeiro criamos uma "trigger function" e depois associamos ela a uma tabela
 -- a diferença para uma FUNCTION é que a TRIGGER é invocada automaticamente, a FUNCTION é quando queremos
--- podemos especificar se queremos a TRIGGER invocada antes ou depois de um evento
+-- podemos especificar se queremos a TRIGGER invocada antes ou depois de um evento (BEFORE ou AFTER)
 -- é muito bom para gravar logs, e permite manter regras complexas e acrescentar regras de negócio sem mudar a aplicação, apenas no banco
 -- uma coisa ruim é que perdemos o controle de versão dos códigos fonte, e é preciso que todos saibam delas (perde o controle facilmente)
 
