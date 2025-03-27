@@ -25,6 +25,7 @@ SELECT id_existe(0);
 
 -- para cancelar um insert por exemplo, podemos usar RAISE EXCEPTION antes ou depois,
 -- ou usar RETURN NULL apenas antes
+-- para modificar o insert podemos modificar diretamente o NEW retornado
 
 -- exemplo
 -- setup
