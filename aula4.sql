@@ -23,6 +23,9 @@ SELECT id_existe(0);
 -- em um UPDATE teremos os 2, em um DELETE teremos apenas OLD, em um INSERT teremos apenas NEW
 -- o NEW e AFTER funcionam independente de ser BEFORE ou AFTER
 
+-- para cancelar um insert por exemplo, podemos usar RAISE EXCEPTION antes ou depois,
+-- ou usar RETURN NULL (ao invés de NEW) antes (depois não funcionaria)
+
 -- exemplo
 -- setup
 DROP TABLE IF EXISTS employees;
