@@ -12,7 +12,7 @@ SELECT id_existe(0);
 
 -- Uma TRIGGER é uma função invocada automaticamente sempre que ocorre um evento associado a uma tabela. (para qualquer linha)
 -- Um evento pode ser qualquer um de: INSERT, UPDATE, DELETE, TRUNCATE (equivalente a um DELETE sem WHERE)
--- Primeiro criamos uma "trigger function" e depois associamos ela a uma tabela
+-- Primeiro criamos uma "trigger function" e depois associamos ela a uma tabela, a trigger em si
 -- a diferença para uma FUNCTION é que a TRIGGER é invocada automaticamente, a FUNCTION é quando queremos
 -- podemos especificar se queremos a TRIGGER invocada antes ou depois de um evento (BEFORE ou AFTER)
 -- é muito bom para gravar logs, e permite manter regras complexas e acrescentar regras de negócio sem mudar a aplicação, apenas no banco
