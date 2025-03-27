@@ -20,7 +20,8 @@ SELECT id_existe(0);
 
 -- a criação da trigger function é igual uma function, mas vai ter "RETURNS TRIGGER", e não recebe nenhum argumento
 -- referenciaremos a linha que estava na tabela e a nova linha como NEW e OLD na trigger function
--- (em um UPDATE teremos os 2, em um DELETE teremos apenas OLD, em um INSERT teremos apenas NEW)
+-- em um UPDATE teremos os 2, em um DELETE teremos apenas OLD, em um INSERT teremos apenas NEW
+-- o NEW e AFTER funcionam independente de ser BEFORE ou AFTER
 
 -- exemplo
 -- setup
