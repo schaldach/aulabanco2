@@ -104,3 +104,5 @@ WHERE localizacao = 'Bloco A' AND orcamento > 30000.00;
 
 -- Considerando os resultados dos filtros, qual JOIN faria sentido executar primeiro?
 -- R:
+
+-- Essas subotimizações geralmente serão feitas pelo próprio planejador de consultas, automaticamente
