@@ -87,22 +87,7 @@ WHERE localizacao = 'Bloco A' AND orcamento > 30000.00;
 -- 			  |
 -- Proj ⨝ Emp_Proj
 
--- Por qual tabela você começaria a ler os dados? Por quê?
--- R: Pela tabelas "Departamentos" ou "Projetos", pois são usados no WHERE.
-
--- O filtro D.localizacao = 'Bloco A' pode ser aplicado antes de qual JOIN?
--- R:
-
--- O filtro P.orcamento > 30000.00 pode ser aplicado antes de qual JOIN?
--- R:
-
--- Se você filtrar Departamentos primeiro, quantas linhas sobram?
--- R:
-
--- Se você filtrar Projetos primeiro, quantas linhas sobram?
--- R:
-
--- Considerando os resultados dos filtros, qual JOIN faria sentido executar primeiro?
--- R:
-
 -- Essas subotimizações geralmente serão feitas pelo próprio planejador de consultas, automaticamente
+
+-- Exemplo: Selecionar título do filme, nome da categoria e quantidade de cópias 
+π film_title, nome_depto, nome_proj, horas_alocadas
