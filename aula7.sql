@@ -88,6 +88,3 @@ WHERE localizacao = 'Bloco A' AND orcamento > 30000.00;
 -- Proj ⨝ Emp_Proj
 
 -- Essas subotimizações geralmente serão feitas pelo próprio planejador de consultas, automaticamente
-
--- Exemplo: Selecionar título do filme, nome da categoria e quantidade de cópias 
-π film_title, nome_depto, nome_proj, horas_alocadas
