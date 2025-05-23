@@ -24,6 +24,7 @@
 -- e por fim retirar a coluna ClienteID. Assim, os JOINS usariam apenas o número absolutamente necessário
 -- de colunas para a operação de junção e para a posterior seleção.
 
+-- 5.
 -- Uma transação em um banco de dados é um conjunto de operações que seguem o princípio ACID:
 -- Atomicidade, Consistência, Isolamento, Durabilidade
 -- Ou seja, após a transação começar ou a transação será concluída e todas as operações serão executadas, 
@@ -33,5 +34,8 @@
 -- COMMIT, que indica o sucesso e fim de uma transação (se existir uma aberta), concretizando todas as operações após o BEGIN; 
 -- e ROLLBACK, que indica a falha e fim de uma transação (se existir uma aberta), desfazendo/invalidando todas as operações após o BEGIN.
 
+-- anotações quiz:
 -- heurística = otimizações
 -- um exemplo é fazer as seleções e projeções o mais cedo possível para os dados unidos ficarem menores
+
+-- seq scan são uma das operações mais custosas em tabelas grandes que são otimizadas com o uso de índices
