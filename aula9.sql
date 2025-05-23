@@ -32,3 +32,6 @@
 -- As 3 operações básicas que permitem utilizar das transações são: BEGIN, que indica o início de uma nova transação;
 -- COMMIT, que indica o sucesso e fim de uma transação (se existir uma aberta), concretizando todas as operações após o BEGIN; 
 -- e ROLLBACK, que indica a falha e fim de uma transação (se existir uma aberta), desfazendo/invalidando todas as operações após o BEGIN.
+
+-- heurística = otimizações
+-- um exemplo é fazer as seleções e projeções o mais cedo possível para os dados unidos ficarem menores
